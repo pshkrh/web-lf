@@ -102,6 +102,8 @@
         </div>
       </div>
 
+      <!-- Sign In Modal -->
+
       <div class="container">
         <div class="modal fade" id="popUpWindow">
         <div class="modal-dialog">
@@ -122,6 +124,7 @@
                         <div class="form-group">
                             <input type="password" class="form-control" placeholder="Password">
                         </div>
+                        <a href="#" data-toggle="modal" data-target="#forgotWindow" data-dismiss="modal">Forgot Password?</a>
                     </form>
                 </div>
 
@@ -134,6 +137,8 @@
         </div>
     </div>
       </div>
+
+      <!-- Sign Up Modal -->
 
 
       <div class="container">
@@ -163,6 +168,39 @@
                             <input type="password" class="form-control" placeholder="Confirm Password">
                         </div>
                         <a href="#" data-toggle="modal" data-target="#popUpWindow" data-dismiss="modal">Already Registered?</a>
+                    </form>
+                </div>
+
+                <!-- button -->
+                <div class="modal-footer">
+                    <button class="btn btn-primary btn-block">Submit</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+      </div>
+
+
+      <!-- Forgot Password Modal -->
+
+      <div class="container">
+        <div class="modal fade" id="forgotWindow">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- header -->
+                <div class="modal-header">
+                  <h3 class="modal-title">Forgot Password</h3>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- body (form) -->
+                <div class="modal-body">
+                    <form role="form">
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Registered Email">
+                        </div>
                     </form>
                 </div>
 
