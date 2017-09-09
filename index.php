@@ -154,18 +154,18 @@
 
                 <!-- body (form) -->
                 <div class="modal-body">
-                    <form role="form" action="includes/signup-inc.php" method="POST">
+                    <form role="form" action="./includes/signup-inc.php" method="POST">
                       <div class="form-group">
-                          <input type="text" class="form-control" placeholder="Name">
+                          <input type="text" class="form-control" placeholder="Username">
                       </div>
-                        <div class="form-group">
-                            <input type="email" class="form-control" placeholder="Email">
-                        </div>
                         <div class="form-group">
                             <input type="password" class="form-control" placeholder="Password">
                         </div>
                         <div class="form-group">
                             <input type="password" class="form-control" placeholder="Confirm Password">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Email">
                         </div>
                         <a href="#" data-toggle="modal" data-target="#popUpWindow" data-dismiss="modal">Already Registered?</a>
                     </form>
@@ -173,7 +173,7 @@
 
                 <!-- button -->
                 <div class="modal-footer">
-                    <button type="submit" class="btn btn-primary btn-block">Submit</button>
+                    <input type="submit" class="btn btn-primary btn-block" value="Submit">
                 </div>
 
             </div>
