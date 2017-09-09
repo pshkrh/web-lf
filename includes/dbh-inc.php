@@ -3,4 +3,6 @@
 $dbServername = "localhost";
 $dbUsername = "root";
 $dbPassword = "";
-$dbname = "weblf";
+$dbName = "weblf";
+
+$conn = mysqli_connect($dbServername,$dbUsername,$dbPassword,$dbName)
