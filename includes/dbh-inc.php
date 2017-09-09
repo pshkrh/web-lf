@@ -6,3 +6,5 @@ $dbPassword = "";
 $dbName = "weblf";
 
 $conn = mysqli_connect($dbServername,$dbUsername,$dbPassword,$dbName)
+
+?>

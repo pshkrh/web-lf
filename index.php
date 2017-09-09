@@ -154,7 +154,7 @@
 
                 <!-- body (form) -->
                 <div class="modal-body">
-                    <form role="form">
+                    <form role="form" action="includes/signup-inc.php" method="POST">
                       <div class="form-group">
                           <input type="text" class="form-control" placeholder="Name">
                       </div>
@@ -173,7 +173,7 @@
 
                 <!-- button -->
                 <div class="modal-footer">
-                    <button class="btn btn-primary btn-block">Submit</button>
+                    <button type="submit" class="btn btn-primary btn-block">Submit</button>
                 </div>
 
             </div>
