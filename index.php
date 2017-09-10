@@ -154,24 +154,24 @@
 
                 <!-- body (form) -->
                 <div class="modal-body">
-                    <form role="form" action="./includes/signup-inc.php" method="POST">
+                    <form role="form" action="includes/signup-inc.php" method="POST">
                       <div class="form-group">
-                          <input type="text" class="form-control" placeholder="Username">
+                          <input type="text" class="form-control" name="username" placeholder="Username">
                       </div>
                         <div class="form-group">
-                            <input type="password" class="form-control" placeholder="Password">
+                            <input type="password" class="form-control" name="password" placeholder="Password">
                         </div>
                         <div class="form-group">
-                            <input type="email" class="form-control" placeholder="Email">
+                            <input type="email" class="form-control" name="email" placeholder="Email">
                         </div>
                         <a href="#" data-toggle="modal" data-target="#popUpWindow" data-dismiss="modal">Already Registered?</a>
+                        <div class="modal-footer">
+                            <button type="submit" class="btn btn-primary btn-block" name="submit" value="submit">Sign Up</button>
+                        </div>
                     </form>
                 </div>
 
                 <!-- button -->
-                <div class="modal-footer">
-                    <input type="submit" class="btn btn-primary btn-block" value="Submit">
-                </div>
 
             </div>
         </div>
