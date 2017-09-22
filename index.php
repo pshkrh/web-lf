@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Lost & Found | Welcome</title>
+    <title>Lost & Found | Home</title>
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
     <!-- Required meta tags -->
     <meta charset="utf-8">
