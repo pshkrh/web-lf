@@ -26,7 +26,7 @@
 
       <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
         <ul class="navbar-nav ml-auto mt-2 mt-lg-0 float-xs-right">
-          <li class="nav-item active">
+          <li class="nav-item">
             <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
@@ -38,6 +38,42 @@
         </ul>
       </div>
     </nav>
+
+    <!-- Sign In Modal -->
+
+        <div class="container">
+          <div class="modal fade" id="popUpWindow">
+          <div class="modal-dialog">
+              <div class="modal-content">
+
+                  <!-- header -->
+                  <div class="modal-header">
+                    <h3 class="modal-title">Sign In</h3>
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  </div>
+
+                  <!-- body (form) -->
+                  <div class="modal-body">
+                      <form role="form">
+                          <div class="form-group">
+                              <input type="email" class="form-control" placeholder="Email">
+                          </div>
+                          <div class="form-group">
+                              <input type="password" class="form-control" placeholder="Password">
+                          </div>
+                          <a href="#" data-toggle="modal" data-target="#forgotWindow" data-dismiss="modal">Forgot Password?</a>
+                      </form>
+                  </div>
+
+                  <!-- button -->
+                  <div class="modal-footer">
+                      <button class="btn btn-primary btn-block">Submit</button>
+                  </div>
+
+              </div>
+          </div>
+      </div>
+        </div>
 
     <!-- Sign Up Modal -->
 
