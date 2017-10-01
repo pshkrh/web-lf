@@ -17,7 +17,7 @@
   <body>
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" href="#" title="Get Back Your Lost Items">
+      <a class="navbar-brand" href="localhost/web-lf/index.php" title="Get Back Your Lost Items">
         <img style="max-width:75px; margin-top: 0px;" src="./img/LFo.png">
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
