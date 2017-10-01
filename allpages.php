@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Lost & Found | Contact Us</title>
+    <title>Lost & Found | Home</title>
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/bootstrap.min.css"</link>
 
     <!--Custom CSS--->
     <link rel="stylesheet" href="./css/style.css">
 
   </head>
-  <body>
 
+  <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <a class="navbar-brand" href="index.php" title="Get Back Your Lost Items">
         <img style="max-width:75px; margin-top: 0px;" src="./img/LFo.png">
@@ -26,92 +26,20 @@
 
       <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
         <ul class="navbar-nav ml-auto mt-2 mt-lg-0 float-xs-right">
-          <li class="nav-item">
+          <li class="nav-item active">
             <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="about.php">About</a>
           </li>
-          <li class="nav-item active">
+          <li class="nav-item">
             <a class="nav-link" href="contact.php">Contact Us</a>
           </li>
         </ul>
       </div>
     </nav>
 
-    <br>
-
-    <div class="container">
-      <div class="box">
-        <div class="row">
-          <div class="col-lg-12">
-            <hr>
-            <h2 class="intro-text text-center display-3">Contact Us</h2>
-            <hr>
-            <p>Have any questions? You can drop us a message by filling out this form, and we will get back to you as soon as possible.</p>
-            <form action=""><div class="row">
-              <div class="form-group col-lg-4">
-                <label for="">Name</label>
-                <input type="text" class="form-control">
-              </div>
-              <div class="form-group col-lg-4">
-                <label for="">E-Mail</label>
-                <input type="email" class="form-control">
-              </div>
-              <div class="form-group col-lg-4">
-                <label for="">Phone Number</label>
-                <input type="tel" class="form-control">
-              </div>
-              <div class="form-group col-lg-12">
-                <label for="">Message</label>
-                <textarea class="form-control" rows="10"></textarea>
-              </div>
-              <div class="form-group col-lg-12">
-                <input type="hidden" name="savebtn" value="contact">
-                <button type="submit" class="btn btn-success">Submit</button>
-              </div>
-            </div></form>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-
-
-
-    <div class="container">
-      <div class="modal fade" id="popUpWindow">
-      <div class="modal-dialog">
-          <div class="modal-content">
-
-              <!-- header -->
-              <div class="modal-header">
-                <h3 class="modal-title">Sign In</h3>
-                  <button type="button" class="close" data-dismiss="modal">&times;</button>
-              </div>
-
-              <!-- body (form) -->
-              <div class="modal-body">
-                  <form role="form">
-                      <div class="form-group">
-                          <input type="email" class="form-control" placeholder="Email">
-                      </div>
-                      <div class="form-group">
-                          <input type="password" class="form-control" placeholder="Password">
-                      </div>
-                  </form>
-              </div>
-
-              <!-- button -->
-              <div class="modal-footer">
-                  <button class="btn btn-primary btn-block">Submit</button>
-              </div>
-
-          </div>
-      </div>
-  </div>
-    </div>
+    <!-- Sign Up Modal -->
 
 
     <div class="container">
@@ -127,20 +55,50 @@
 
               <!-- body (form) -->
               <div class="modal-body">
-                  <form role="form">
+                  <form role="form" action="includes/signup-inc.php" method="POST">
                     <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Name">
+                        <input type="text" class="form-control" name="username" placeholder="Username">
                     </div>
                       <div class="form-group">
-                          <input type="email" class="form-control" placeholder="Email">
+                          <input type="password" class="form-control" name="password" placeholder="Password">
                       </div>
                       <div class="form-group">
-                          <input type="password" class="form-control" placeholder="Password">
-                      </div>
-                      <div class="form-group">
-                          <input type="password" class="form-control" placeholder="Confirm Password">
+                          <input type="email" class="form-control" name="email" placeholder="Email">
                       </div>
                       <a href="#" data-toggle="modal" data-target="#popUpWindow" data-dismiss="modal">Already Registered?</a>
+                      <div class="modal-footer">
+                          <button type="submit" class="btn btn-primary btn-block" name="submit" value="submit">Sign Up</button>
+                      </div>
+                  </form>
+              </div>
+
+              <!-- button -->
+
+          </div>
+      </div>
+  </div>
+    </div>
+
+
+    <!-- Forgot Password Modal -->
+
+    <div class="container">
+      <div class="modal fade" id="forgotWindow">
+      <div class="modal-dialog">
+          <div class="modal-content">
+
+              <!-- header -->
+              <div class="modal-header">
+                <h3 class="modal-title">Forgot Password</h3>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>
+
+              <!-- body (form) -->
+              <div class="modal-body">
+                  <form role="form">
+                      <div class="form-group">
+                          <input type="email" class="form-control" placeholder="Registered Email">
+                      </div>
                   </form>
               </div>
 
@@ -153,17 +111,7 @@
       </div>
   </div>
     </div>
-
-    <hr>
-
-
-<div class="container">
-  <footer>
-    <p>Lost & Found, Copyright &copy; 2017</p>
-  </footer>
-</div>
-
-  </div> <!-- /container -->
+<!-- /container -->
 
 
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->

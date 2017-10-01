@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Lost & Found | Welcome</title>
+    <title>Lost & Found | Home</title>
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/bootstrap.min.css"</link>
 
     <!--Custom CSS--->
     <link rel="stylesheet" href="./css/style.css">
@@ -17,7 +17,7 @@
   <body>
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" href="#" title="Get Back Your Lost Items">
+      <a class="navbar-brand" href="index.php" title="Get Back Your Lost Items">
         <img style="max-width:75px; margin-top: 0px;" src="./img/LFo.png">
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,16 +27,13 @@
       <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
         <ul class="navbar-nav ml-auto mt-2 mt-lg-0 float-xs-right">
           <li class="nav-item active">
-            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="about.html">About</a>
+            <a class="nav-link" href="about.php">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact Us</a>
-          </li>
-          <li class="nav-item">
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#signUpWindow">Sign Up</a>
+            <a class="nav-link" href="contact.php">Contact Us</a>
           </li>
         </ul>
       </div>
@@ -46,7 +43,7 @@
     <div id="stage-caption">
       <h1 class="display-3">Lost & Found</h1>
       <p>A simple, easy to use system.</p>
-      <p>Sign In / Register to get started.</p>
+      <a role="button" href="#" class="btn btn-success" data-toggle="modal" data-target="#signUpWindow">Sign Up Here</a>
     </div>
   </div>
 
@@ -154,27 +151,24 @@
 
                 <!-- body (form) -->
                 <div class="modal-body">
-                    <form role="form">
+                    <form role="form" action="includes/signup-inc.php" method="POST">
                       <div class="form-group">
-                          <input type="text" class="form-control" placeholder="Name">
+                          <input type="text" class="form-control" name="username" placeholder="Username">
                       </div>
                         <div class="form-group">
-                            <input type="email" class="form-control" placeholder="Email">
+                            <input type="password" class="form-control" name="password" placeholder="Password">
                         </div>
                         <div class="form-group">
-                            <input type="password" class="form-control" placeholder="Password">
-                        </div>
-                        <div class="form-group">
-                            <input type="password" class="form-control" placeholder="Confirm Password">
+                            <input type="email" class="form-control" name="email" placeholder="Email">
                         </div>
                         <a href="#" data-toggle="modal" data-target="#popUpWindow" data-dismiss="modal">Already Registered?</a>
+                        <div class="modal-footer">
+                            <button type="submit" class="btn btn-primary btn-block" name="submit" value="submit">Sign Up</button>
+                        </div>
                     </form>
                 </div>
 
                 <!-- button -->
-                <div class="modal-footer">
-                    <button class="btn btn-primary btn-block">Submit</button>
-                </div>
 
             </div>
         </div>
