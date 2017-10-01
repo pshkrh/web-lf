@@ -95,20 +95,19 @@
                 <div class="modal-body">
                     <form role="form" action="includes/login.php" method="POST">
                         <div class="form-group">
-                            <input type="email" class="form-control" placeholder="Email">
+                            <input type="text" class="form-control" name="username" placeholder="Username">
                         </div>
                         <div class="form-group">
-                            <input type="password" class="form-control" placeholder="Password">
+                            <input type="password" class="form-control" name="pwd" placeholder="Password">
                         </div>
                         <a href="#" data-toggle="modal" data-target="#forgotWindow" data-dismiss="modal">Forgot Password?</a>
-                    </form>
                 </div>
 
                 <!-- button -->
                 <div class="modal-footer">
-                    <button class="btn btn-primary btn-block">Submit</button>
+                    <button type="submit" class="btn btn-primary btn-block" name="submit" value="button">Submit</button>
                 </div>
-
+			</form>
             </div>
         </div>
     </div>
