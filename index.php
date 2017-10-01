@@ -151,7 +151,7 @@
 
                 <!-- body (form) -->
                 <div class="modal-body">
-                    <form role="form" action="includes/signup-inc.php" method="POST">
+                    <form role="form" action="includes/signup.php" method="POST">
                       <div class="form-group">
                           <input type="text" class="form-control" name="username" placeholder="Username">
                       </div>
