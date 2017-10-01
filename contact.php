@@ -46,7 +46,7 @@
         <div class="row">
           <div class="col-lg-12">
             <hr>
-            <h2 class="intro-text text-center">Contact Us</h2>
+            <h2 class="intro-text text-center display-3">Contact Us</h2>
             <hr>
             <p>Have any questions? You can drop us a message by filling out this form, and we will get back to you as soon as possible.</p>
             <form action=""><div class="row">
