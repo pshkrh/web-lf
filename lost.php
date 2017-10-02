@@ -28,6 +28,7 @@
         <div class="col-md-4">
           <label for="type">Type</label>
           <select class="form-control" id="exampleFormControlSelect1">
+            <option value="" disabled selected>Select a Type</option>
             <option>Mobile Phone</option>
             <option>Laptop</option>
             <option>Water Bottle</option>
@@ -40,6 +41,7 @@
         <div class="form-group col-md-4">
           <label for="colour">Colour</label>
           <select class="form-control" id="exampleFormControlSelect1">
+            <option value="" disabled selected>Select a Colour</option>
             <option>Violet</option>
             <option>Indigo</option>
             <option>Blue</option>
@@ -52,17 +54,18 @@
 
         <div class="form-group col-md-4">
           <label for="model">Model (If applicable)</label>
-          <input class="form-control" type="Text" placeholder="Model">
+          <input class="form-control" type="Text" placeholder="Enter Model">
         </div>
 
         <div class="form-group col-md-4">
           <label for="model">Manufacturer / Company</label>
-          <input class="form-control" type="Text">
+          <input class="form-control" type="Text" placeholder="Enter Manufacturer">
         </div>
 
         <div class="form-group col-md-4">
           <label for="model">Last known location</label>
           <select class="form-control">
+            <option value="" disabled selected>Select location</option>
             <option>A-Block</option>
             <option>B-Block</option>
             <option>C-Block</option>
@@ -79,7 +82,7 @@
 
         <div class="form-group col-md-4">
           <label for="model">Time when you lost the item (HH:MM)</label>
-          <input class="form-control" type="Text" placeholder="Model">
+          <input class="form-control" type="Text" placeholder="Enter time">
         </div>
 
         <div class="form-group col-md-12">
