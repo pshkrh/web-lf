@@ -144,7 +144,7 @@
 
               <!-- button -->
               <div class="modal-footer">
-                  <button class="btn btn-primary btn-block">Submit</button>
+                  <button type="submit" class="btn btn-primary btn-block">Submit</button>
               </div>
 
           </div>
