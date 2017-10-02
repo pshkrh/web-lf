@@ -25,22 +25,22 @@
             <h2 class="intro-text text-center display-3">Contact Us</h2>
             <hr>
             <p>Have any questions? You can drop us a message by filling out this form, and we will get back to you as soon as possible.</p>
-            <form action=""><div class="row">
+            <form action="includes/contactus.php" method="POST"><div class="row">
               <div class="form-group col-lg-4">
                 <label for="">Name</label>
-                <input type="text" class="form-control">
+                <input type="text" class="form-control" name="name">
               </div>
               <div class="form-group col-lg-4">
                 <label for="">E-Mail</label>
-                <input type="email" class="form-control">
+                <input type="email" class="form-control" name="email">
               </div>
               <div class="form-group col-lg-4">
                 <label for="">Phone Number</label>
-                <input type="tel" class="form-control">
+                <input type="tel" class="form-control" name="phno">
               </div>
               <div class="form-group col-lg-12">
                 <label for="">Message</label>
-                <textarea class="form-control" rows="10"></textarea>
+                <textarea class="form-control" rows="10" name="msg"></textarea>
               </div>
               <div class="form-group col-lg-12">
                 <input type="hidden" name="savebtn" value="contact">
