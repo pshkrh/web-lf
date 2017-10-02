@@ -56,10 +56,16 @@
                   <div class="modal-body">
                       <form role="form" action="includes/login.php" method="POST">
                           <div class="form-group">
-                              <input type="text" class="form-control" name="username" placeholder="Username">
+                              <input type="text" class="form-control" name="username" placeholder="Username" required>
+                              <div class="invalid-feedback">
+                                Please provide a valid username.
+                              </div>
                           </div>
                           <div class="form-group">
-                              <input type="password" class="form-control" name="pwd" placeholder="Password">
+                              <input type="password" class="form-control" name="pwd" placeholder="Password" required>
+                              <div class="invalid-feedback">
+                                Please provide a valid password.
+                              </div>
                           </div>
                           <a href="#" data-toggle="modal" data-target="#forgotWindow" data-dismiss="modal">Forgot Password?</a>
                           <div class="modal-footer">
@@ -91,13 +97,13 @@
               <div class="modal-body">
                   <form role="form" action="includes/signup.php" method="POST">
                     <div class="form-group">
-                        <input type="text" class="form-control" name="username" placeholder="Username">
+                        <input type="text" class="form-control" name="username" placeholder="Username" required>
                     </div>
                       <div class="form-group">
-                          <input type="password" class="form-control" name="password" placeholder="Password">
+                          <input type="password" class="form-control" name="password" placeholder="Password" required>
                       </div>
                       <div class="form-group">
-                          <input type="email" class="form-control" name="email" placeholder="Email">
+                          <input type="email" class="form-control" name="email" placeholder="Email" required>
                       </div>
                       <a href="#" data-toggle="modal" data-target="#popUpWindow" data-dismiss="modal">Already Registered?</a>
                       <div class="modal-footer">
@@ -131,7 +137,7 @@
               <div class="modal-body">
                   <form role="form">
                       <div class="form-group">
-                          <input type="email" class="form-control" placeholder="Registered Email">
+                          <input type="email" class="form-control" placeholder="Registered Email" required>
                       </div>
                   </form>
               </div>
@@ -146,8 +152,6 @@
   </div>
     </div>
 <!-- /container -->
-
-
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
