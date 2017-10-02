@@ -11,5 +11,5 @@ $sql = "INSERT INTO contact (name,email,phoneno,msg)
 VALUES ('$name','$email','$phno','$msg')";
 $result=mysqli_query($conn,$sql);
 
-header("Location: ../lf.php");
+header("Location: ../contact.php");
 ?>
