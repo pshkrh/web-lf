@@ -54,17 +54,17 @@
 
                   <!-- body (form) -->
                   <div class="modal-body">
-                      <form role="form" action="includes/login.php" method="POST">
+                      <form role="form" action="includes/login.php" method="POST" id="needs-validation" novalidate>
                           <div class="form-group">
                               <input type="text" class="form-control" name="username" placeholder="Username" required>
                               <div class="invalid-feedback">
-                                Please provide a valid username.
+                                Please enter a valid username.
                               </div>
                           </div>
                           <div class="form-group">
                               <input type="password" class="form-control" name="pwd" placeholder="Password" required>
                               <div class="invalid-feedback">
-                                Please provide a valid password.
+                                Please enter a valid password.
                               </div>
                           </div>
                           <a href="#" data-toggle="modal" data-target="#forgotWindow" data-dismiss="modal">Forgot Password?</a>
@@ -95,15 +95,24 @@
 
               <!-- body (form) -->
               <div class="modal-body">
-                  <form role="form" action="includes/signup.php" method="POST">
+                  <form role="form" action="includes/signup.php" method="POST" id="needs-validation2" novalidate>
                     <div class="form-group">
                         <input type="text" class="form-control" name="username" placeholder="Username" required>
+                        <div class="invalid-feedback">
+                          Please enter a valid username.
+                        </div>
                     </div>
                       <div class="form-group">
                           <input type="password" class="form-control" name="password" placeholder="Password" required>
+                          <div class="invalid-feedback">
+                            Please enter a valid password.
+                          </div>
                       </div>
                       <div class="form-group">
                           <input type="email" class="form-control" name="email" placeholder="Email" required>
+                          <div class="invalid-feedback">
+                            Please enter a valid email.
+                          </div>
                       </div>
                       <a href="#" data-toggle="modal" data-target="#popUpWindow" data-dismiss="modal">Already Registered?</a>
                       <div class="modal-footer">
@@ -152,6 +161,38 @@
   </div>
     </div>
 <!-- /container -->
+
+<script>
+(function() {
+  "use strict";
+  window.addEventListener("load", function() {
+    var form = document.getElementById("needs-validation");
+    form.addEventListener("submit", function(event) {
+      if (form.checkValidity() == false) {
+        event.preventDefault();
+        event.stopPropagation();
+      }
+      form.classList.add("was-validated");
+    }, false);
+  }, false);
+}());
+</script>
+
+<script>
+(function() {
+  "use strict";
+  window.addEventListener("load", function() {
+    var form = document.getElementById("needs-validation2");
+    form.addEventListener("submit", function(event) {
+      if (form.checkValidity() == false) {
+        event.preventDefault();
+        event.stopPropagation();
+      }
+      form.classList.add("was-validated");
+    }, false);
+  }, false);
+}());
+</script>
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
