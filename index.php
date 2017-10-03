@@ -1,3 +1,8 @@
+<?php
+  // Start the session
+  session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -75,6 +80,13 @@
           <p><a class="btn btn-secondary" href="https://atom.io/" role="button">Learn More &raquo;</a></p>
         </div>
       </div>
+
+      <?php
+        // Set session variables
+        $_SESSION["username"] = "";
+        $_SESSION["pwd"] = "";
+        echo "Session variables are set.";
+      ?>
 
       <?php include 'footer.php';?>
 </body>

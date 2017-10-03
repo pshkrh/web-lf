@@ -21,20 +21,15 @@
     <br>
 <div class="container">
   <div class="row">
-    <div class="col-md-4">
+    <div class="col-md-6">
       <img src="./img/me.jpg" class="rounded">
       <h2>Pushkar Kurhekar</h2>
       <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
     </div>
-    <div class="col-md-4">
+    <div class="col-md-6">
       <img src="./img/vindare.jpg" class="rounded">
       <h2>Vineet Vemula</h2>
       <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-    </div>
-    <div class="col-md-4">
-      <img src="./img/logo_user.png" class="rounded">
-      <h2>Akash Vaidya</h2>
-      <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
     </div>
   </div>
 </div>
