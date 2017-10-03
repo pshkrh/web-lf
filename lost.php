@@ -23,18 +23,18 @@
   </div>
 
   <div class="container">
-    <form action="">
+    <form action="includes/lostform.php">
       <div class="form-row">
         <div class="col-md-4">
           <label for="type">Type</label>
           <select class="form-control" id="exampleFormControlSelect1">
             <option value="" disabled selected>Select a Type</option>
-            <option>Mobile Phone</option>
-            <option>Laptop</option>
-            <option>Water Bottle</option>
-            <option>Lunch Box</option>
-            <option>Notebook</option>
-            <option>Wallet</option>
+            <option value="mobile">Mobile Phone</option>
+            <option value="laptop">Laptop</option>
+            <option value="wb">Water Bottle</option>
+            <option="lb">Lunch Box</option>
+            <option="nb">Notebook</option>
+            <option="wallet">Wallet</option>
           </select>
         </div>
 
@@ -42,13 +42,13 @@
           <label for="colour">Colour</label>
           <select class="form-control" id="exampleFormControlSelect1">
             <option value="" disabled selected>Select a Colour</option>
-            <option>Violet</option>
-            <option>Indigo</option>
-            <option>Blue</option>
-            <option>Green</option>
-            <option>Yellow</option>
-            <option>Orange</option>
-            <option>Red</option>
+            <option value="violet">Violet</option>
+            <option value="indigo">Indigo</option>
+            <option value="blue">Blue</option>
+            <option value="green">Green</option>
+            <option value="yellow">Yellow</option>
+            <option value="orange">Orange</option>
+            <option value="red">Red</option>
           </select>
         </div>
 
@@ -58,40 +58,40 @@
         </div>
 
         <div class="form-group col-md-4">
-          <label for="model">Manufacturer / Company</label>
+          <label for="company">Manufacturer / Company</label>
           <input class="form-control" type="Text" placeholder="Enter Manufacturer">
         </div>
 
         <div class="form-group col-md-4">
-          <label for="model">Last known location</label>
+          <label for="location">Last known location</label>
           <select class="form-control">
             <option value="" disabled selected>Select location</option>
-            <option>A-Block</option>
-            <option>B-Block</option>
-            <option>C-Block</option>
-            <option>D-Block</option>
-            <option>E-Block</option>
-            <option>F-Block</option>
-            <option>M-Block</option>
-            <option>S-Block</option>
-            <option>Y-Block</option>
-            <option>VSIT</option>
-            <option>VP</option>
+            <option value="a">A-Block</option>
+            <option value="b">B-Block</option>
+            <option value="c">C-Block</option>
+            <option value="d">D-Block</option>
+            <option value="e">E-Block</option>
+            <option value="f">F-Block</option>
+            <option value="m">M-Block</option>
+            <option value="s">S-Block</option>
+            <option value="y">Y-Block</option>
+            <option value="vsit">VSIT</option>
+            <option value="vp">VP</option>
           </select>
         </div>
 
         <div class="form-group col-md-4">
-          <label for="model">Time when you lost the item (HH:MM)</label>
+          <label for="tym">Time when you lost the item (HH:MM)</label>
           <input class="form-control" type="Text" placeholder="Enter time">
         </div>
 
         <div class="form-group col-md-12">
-          <label for="model">Extra Details</label>
+          <label for="details">Extra Details</label>
           <textarea class="form-control" rows="5" placeholder="Describe your lost item in detail here..."></textarea>
         </div>
 
         <div class="form-group col-md-12">
-          <label for="image">Upload an Image</label>
+          <label for="img">Upload an Image</label>
           <br>
           <label class="custom-file">
             <input type="file" id="file2" class="custom-file-input">
