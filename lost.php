@@ -23,11 +23,11 @@
   </div>
 
   <div class="container">
-    <form action="includes/lostform.php">
+    <form action="includes/lostform.php" method="POST">
       <div class="form-row">
         <div class="col-md-4">
           <label for="type">Type</label>
-          <select class="form-control" id="exampleFormControlSelect1">
+          <select name="type" class="form-control" id="exampleFormControlSelect1">
             <option value="" disabled selected>Select a Type</option>
             <option value="mobile">Mobile Phone</option>
             <option value="laptop">Laptop</option>
@@ -40,7 +40,7 @@
 
         <div class="form-group col-md-4">
           <label for="colour">Colour</label>
-          <select class="form-control" id="exampleFormControlSelect1">
+          <select name="colour" class="form-control" id="exampleFormControlSelect1">
             <option value="" disabled selected>Select a Colour</option>
             <option value="violet">Violet</option>
             <option value="indigo">Indigo</option>
@@ -54,17 +54,17 @@
 
         <div class="form-group col-md-4">
           <label for="model">Model (If applicable)</label>
-          <input class="form-control" type="Text" placeholder="Enter Model">
+          <input name="model" class="form-control" type="Text" placeholder="Enter Model">
         </div>
 
         <div class="form-group col-md-4">
           <label for="company">Manufacturer / Company</label>
-          <input class="form-control" type="Text" placeholder="Enter Manufacturer">
+          <input name="company" class="form-control" type="Text" placeholder="Enter Manufacturer">
         </div>
 
         <div class="form-group col-md-4">
           <label for="location">Last known location</label>
-          <select class="form-control">
+          <select name="location" class="form-control">
             <option value="" disabled selected>Select location</option>
             <option value="a">A-Block</option>
             <option value="b">B-Block</option>
@@ -82,19 +82,19 @@
 
         <div class="form-group col-md-4">
           <label for="tym">Time when you lost the item (HH:MM)</label>
-          <input class="form-control" type="Text" placeholder="Enter time">
+          <input name="tym" class="form-control" type="Text" placeholder="Enter time">
         </div>
 
         <div class="form-group col-md-12">
           <label for="details">Extra Details</label>
-          <textarea class="form-control" rows="5" placeholder="Describe your lost item in detail here..."></textarea>
+          <textarea name="details" class="form-control" rows="5" placeholder="Describe your lost item in detail here..."></textarea>
         </div>
 
         <div class="form-group col-md-12">
           <label for="img">Upload an Image</label>
           <br>
           <label class="custom-file">
-            <input type="file" id="file2" class="custom-file-input">
+            <input name="img" type="file" id="file2" class="custom-file-input">
             <span class="custom-file-control"></span>
           </label>
         </div>
