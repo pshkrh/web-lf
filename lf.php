@@ -18,7 +18,7 @@
     <?php include 'loginpages.php';?>
     <div class="container">
       <h1 class="display-1">Welcome to Web-LF!</h1>
-      <h6 class="display-4">Please select an option below.</h4>
+      <h2 class="display-4">Please select an option below.</h4>
     </div>
 
     <br>
