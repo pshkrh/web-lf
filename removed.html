@@ -15,3 +15,26 @@ from lost.php
   <input type="hidden" name="savebtn" value="lost">
   <button type="submit" class="btn btn-success">Submit</button>
 </div>
+
+
+// from login.php
+
+$message = "Incorrect Username or Password, Try Again.";
+echo "
+
+<script type='text/javascript'>
+function validateform(form)
+{
+    alert('$message');
+}
+
+
+</script>";
+
+
+
+echo "<script language='javascript' type='text/javascript'>";
+echo"$('#loginalert').show('fade')";
+echo "</script>";
+$URL="../index.php";
+echo "<script>location.href='$URL'</script>";
