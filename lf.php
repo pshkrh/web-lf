@@ -1,3 +1,5 @@
+<?php session_start(); ?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -17,7 +19,7 @@
   <body>
     <?php include 'loginpages.php';?>
     <div class="container">
-      <h1 class="display-1">Welcome to Web-LF!</h1>
+      <h1 class="display-1">Welcome to Web-LF, <?php echo("{$_SESSION['username']}");?>!</h1>
       <h2 class="display-4">Please select an option below.</h4>
     </div>
 
@@ -26,11 +28,14 @@
 
     <div class="container">
       <div class="row">
-        <div class="col-md-5">
+        <div class="col-md-3">
           <a class="btn btn-outline-danger btn-block" href="lost.php" role="button">I Lost An Item</a>
         </div>
-        <div class="col-md-5">
+        <div class="col-md-3">
           <a class="btn btn-outline-success btn-block" href="found.php" role="button">I Found An Item</a>
+        </div>
+        <div class="col-md-3">
+          <a class="btn btn-outline-info btn-block" href="claim.php" role="button">View All Lost Items</a>
         </div>
       </div>
     </div>
