@@ -29,12 +29,12 @@
           <label for="type">Type</label>
           <select name="type" class="form-control" id="exampleFormControlSelect1">
             <option value="" disabled selected>Select a Type</option>
-            <option value="mobile">Mobile Phone</option>
-            <option value="laptop">Laptop</option>
-            <option value="wb">Water Bottle</option>
-            <option="lb">Lunch Box</option>
-            <option="nb">Notebook</option>
-            <option="wallet">Wallet</option>
+            <option value="Mobile Phone">Mobile Phone</option>
+            <option value="Laptop">Laptop</option>
+            <option value="Water Bottle">Water Bottle</option>
+            <option value="Lunch Box">Lunch Box</option>
+            <option value="Notebook">Notebook</option>
+            <option value="Wallet">Wallet</option>
           </select>
         </div>
 
@@ -42,13 +42,15 @@
           <label for="colour">Colour</label>
           <select name="colour" class="form-control" id="exampleFormControlSelect1">
             <option value="" disabled selected>Select a Colour</option>
-            <option value="violet">Violet</option>
-            <option value="indigo">Indigo</option>
-            <option value="blue">Blue</option>
-            <option value="green">Green</option>
-            <option value="yellow">Yellow</option>
-            <option value="orange">Orange</option>
-            <option value="red">Red</option>
+            <option value="Violet">Violet</option>
+            <option value="Indigo">Indigo</option>
+            <option value="Blue">Blue</option>
+            <option value="Green">Green</option>
+            <option value="Yellow">Yellow</option>
+            <option value="Orange">Orange</option>
+            <option value="Red">Red</option>
+            <option value="White">White</option>
+            <option value="Black">Black</option>
           </select>
         </div>
 
