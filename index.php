@@ -88,6 +88,139 @@
         echo "Session variables are set.";
       ?>
 
+
+          <!-- Sign In Modal -->
+
+              <div class="container">
+                <div class="modal fade" id="popUpWindow">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+
+                        <!-- header -->
+                        <div class="modal-header">
+                          <h3 class="modal-title">Sign In</h3>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+
+                        <!-- body (form) -->
+                        <div class="modal-body">
+                            <form role="form" action="includes/login.php" method="POST" id="loginform">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="username" placeholder="Username" required>
+                                    <div class="invalid-feedback">
+                                      Please enter a valid username.
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" class="form-control" name="password" placeholder="Password" required>
+                                    <div class="invalid-feedback">
+                                      Please enter a valid password.
+                                    </div>
+                                </div>
+                                <a href="#" data-toggle="modal" data-target="#forgotWindow" data-dismiss="modal">Forgot Password?</a>
+                                <div class="modal-footer">
+                                    <button type="submit" class="btn btn-primary btn-block" name="loginbtn" value="button">Submit</button>
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+              </div>
+
+              <!-- Login alert-->
+
+              <div id="loginalert" class="alert alert-warning alert-dismissible collapse" role="alert">
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+  <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+</div>
+
+          <!-- Sign Up Modal -->
+
+
+          <div class="container">
+            <div class="modal fade" id="signUpWindow">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <!-- header -->
+                    <div class="modal-header">
+                      <h3 class="modal-title">Sign Up</h3>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+                    <!-- body (form) -->
+                    <div class="modal-body">
+                        <form role="form" action="includes/signup.php" method="POST" id="needs-validation2" novalidate>
+                          <div class="form-group">
+                              <input type="text" class="form-control" name="username" placeholder="Username" required>
+                              <div class="invalid-feedback">
+                                Please enter a username.
+                              </div>
+                          </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" name="password" placeholder="Password" required>
+                                <div class="invalid-feedback">
+                                  Please enter a password.
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" name="email" placeholder="Email" required>
+                                <div class="invalid-feedback">
+                                  Please enter an email address.
+                                </div>
+                            </div>
+                            <a href="#" data-toggle="modal" data-target="#popUpWindow" data-dismiss="modal">Already Registered?</a>
+                            <div class="modal-footer">
+                                <button type="submit" class="btn btn-primary btn-block" name="signupbtn" value="submit">Sign Up</button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- button -->
+
+                </div>
+            </div>
+        </div>
+          </div>
+
+
+          <!-- Forgot Password Modal -->
+
+          <div class="container">
+            <div class="modal fade" id="forgotWindow">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <!-- header -->
+                    <div class="modal-header">
+                      <h3 class="modal-title">Forgot Password</h3>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+                    <!-- body (form) -->
+                    <div class="modal-body">
+                        <form role="form">
+                            <div class="form-group">
+                                <input type="email" class="form-control" placeholder="Registered Email" required>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- button -->
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-primary btn-block">Submit</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+          </div>
+      <!-- /container -->
+
       <?php include 'footer.php';?>
 </body>
 </html>
