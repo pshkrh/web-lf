@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./css/bootstrap.min.css"</link>
 
     <!--Custom CSS--->
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style2.css">
 
   </head>
 
@@ -36,84 +36,15 @@
             <a class="nav-link" href="found.php">Found Item</a>
           </li>
           <li class="nav-item">
-            <a class="btn btn-info" href="exit.html" role="button">Log Out</a>
+            <a class="nav-link" href="claim.php">Claims</a>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-info" href="exit.php" role="button" name="logout">Log Out</a>
           </li>
         </ul>
       </div>
     </nav>
 
-    <!-- Sign Up Modal -->
-
-
-    <div class="container">
-      <div class="modal fade" id="signUpWindow">
-      <div class="modal-dialog">
-          <div class="modal-content">
-
-              <!-- header -->
-              <div class="modal-header">
-                <h3 class="modal-title">Sign Up</h3>
-                  <button type="button" class="close" data-dismiss="modal">&times;</button>
-              </div>
-
-              <!-- body (form) -->
-              <div class="modal-body">
-                  <form role="form" action="includes/signup-inc.php" method="POST">
-                    <div class="form-group">
-                        <input type="text" class="form-control" name="username" placeholder="Username">
-                    </div>
-                      <div class="form-group">
-                          <input type="password" class="form-control" name="password" placeholder="Password">
-                      </div>
-                      <div class="form-group">
-                          <input type="email" class="form-control" name="email" placeholder="Email">
-                      </div>
-                      <a href="#" data-toggle="modal" data-target="#popUpWindow" data-dismiss="modal">Already Registered?</a>
-                      <div class="modal-footer">
-                          <button type="submit" class="btn btn-primary btn-block" name="submit" value="submit">Sign Up</button>
-                      </div>
-                  </form>
-              </div>
-
-              <!-- button -->
-
-          </div>
-      </div>
-  </div>
-    </div>
-
-
-    <!-- Forgot Password Modal -->
-
-    <div class="container">
-      <div class="modal fade" id="forgotWindow">
-      <div class="modal-dialog">
-          <div class="modal-content">
-
-              <!-- header -->
-              <div class="modal-header">
-                <h3 class="modal-title">Forgot Password</h3>
-                  <button type="button" class="close" data-dismiss="modal">&times;</button>
-              </div>
-
-              <!-- body (form) -->
-              <div class="modal-body">
-                  <form role="form">
-                      <div class="form-group">
-                          <input type="email" class="form-control" placeholder="Registered Email">
-                      </div>
-                  </form>
-              </div>
-
-              <!-- button -->
-              <div class="modal-footer">
-                  <button class="btn btn-primary btn-block">Submit</button>
-              </div>
-
-          </div>
-      </div>
-  </div>
-    </div>
 <!-- /container -->
 
 
