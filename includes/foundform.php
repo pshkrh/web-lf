@@ -1,5 +1,7 @@
 <?php
 
+session_start();
+
 include 'dbh.php';
 
 $model = $_POST['model'];
@@ -10,9 +12,11 @@ $det = $_POST['details'];
 $img = $_POST['img'];
 $colour=$_POST['colour'];
 $type=$_POST['type'];
+$user=$_SESSION['username'];
+$status="Found";
 
-$sql = "INSERT INTO found (type,model,company,location,tym,details,img,colour)
-VALUES ('$type','$model','$comp','$loc','$time','$det','$img','$colour')";
+$sql = "INSERT INTO found (type,model,company,location,tym,details,img,colour,user,status)
+VALUES ('$type','$model','$comp','$loc','$time','$det','$img','$colour','$user','$status')";
 $result=mysqli_query($conn,$sql);
 
 header("Location: ../lf.php");
