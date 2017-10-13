@@ -28,15 +28,15 @@
             <form action="includes/contactus.php" method="POST"><div class="row">
               <div class="form-group col-lg-4">
                 <label for="">Name</label>
-                <input type="text" class="form-control" name="name">
+                <input type="text" class="form-control" name="name" required>
               </div>
               <div class="form-group col-lg-4">
                 <label for="">E-Mail</label>
-                <input type="email" class="form-control" name="email">
+                <input type="email" class="form-control" name="email" required>
               </div>
               <div class="form-group col-lg-4">
                 <label for="">Phone Number</label>
-                <input type="tel" class="form-control" name="phno">
+                <input type="tel" class="form-control" name="phno" required>
               </div>
               <div class="form-group col-lg-12">
                 <label for="">Message</label>
