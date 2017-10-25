@@ -26,8 +26,12 @@
     <hr>
   </div>
 
+  <div class="container">
+    <h6 class="display-4">Lost Items</h6>
+  </div>
+
   <?php
-  $sql = "SELECT id,type,model,location,status,user FROM lost";
+  $sql = "SELECT id,type,company,model,location,status,user FROM lost";
   $result=mysqli_query($conn,$sql);
 
   echo"<div class='container'>";
@@ -36,6 +40,7 @@
   <tr>
   <th>ID</th>
   <th>Type</th>
+  <th>Company</th>
   <th>Model</th>
   <th>Location</th>
   <th>Status</th>
@@ -47,6 +52,48 @@
     echo "<tr>";
     echo "<td>" . $row['id'] . "</td>";
     echo "<td>" . $row['type'] . "</td>";
+    echo "<td>" . $row['company'] . "</td>";
+    echo "<td>" . $row['model'] . "</td>";
+    echo "<td>" . $row['location'] . "</td>";
+    echo "<td>" . $row['status'] . "</td>";
+    echo "<td>" . $row['user'] . "</td>";
+    echo "</tr>";
+  }
+  echo "</table>";
+  echo "</div>";
+?>
+
+
+
+  <div class="container">
+    <hr>
+    <h6 class="display-4">Found Items</h6>
+  </div>
+
+<?php
+  $sql = "SELECT id,type,company,model,location,status,user FROM found";
+  $result=mysqli_query($conn,$sql);
+
+  echo"<div class='container'>";
+  echo "<table class='table table-striped table-hover'>
+  <thead class='thead-inverse'>
+  <tr>
+  <th>ID</th>
+  <th>Type</th>
+  <th>Company</th>
+  <th>Model</th>
+  <th>Location</th>
+  <th>Status</th>
+  <th>Reported By</th>
+  </tr>
+  </thead>";
+
+  while($row = mysqli_fetch_array($result))
+  {
+    echo "<tr>";
+    echo "<td>" . $row['id'] . "</td>";
+    echo "<td>" . $row['type'] . "</td>";
+    echo "<td>" . $row['company'] . "</td>";
     echo "<td>" . $row['model'] . "</td>";
     echo "<td>" . $row['location'] . "</td>";
     echo "<td>" . $row['status'] . "</td>";
