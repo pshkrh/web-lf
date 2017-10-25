@@ -23,11 +23,11 @@
   </div>
 
   <div class="container">
-    <form action="includes/lostform.php" method="POST">
+    <form onsubmit="return valtime(tym)" action="includes/lostform.php" method="POST" enctype="multipart/form-data">
       <div class="form-row">
         <div class="col-md-4">
           <label for="type">Type</label>
-          <select name="type" class="form-control" id="exampleFormControlSelect1">
+          <select name="type" class="form-control" id="exampleFormControlSelect1" required>
             <option value="" disabled selected>Select a Type</option>
             <option value="Mobile Phone">Mobile Phone</option>
             <option value="Laptop">Laptop</option>
@@ -40,7 +40,7 @@
 
         <div class="form-group col-md-4">
           <label for="colour">Colour</label>
-          <select name="colour" class="form-control" id="exampleFormControlSelect1">
+          <select name="colour" class="form-control" id="exampleFormControlSelect1" required>
             <option value="" disabled selected>Select a Colour</option>
             <option value="Violet">Violet</option>
             <option value="Indigo">Indigo</option>
@@ -60,31 +60,32 @@
         </div>
 
         <div class="form-group col-md-4">
-          <label for="company">Manufacturer / Company</label>
+          <label for="company">Manufacturer / Company (If applicable)</label>
           <input name="company" class="form-control" type="Text" placeholder="Enter Manufacturer">
         </div>
 
         <div class="form-group col-md-4">
           <label for="location">Last known location</label>
-          <select name="location" class="form-control">
+          <select name="location" class="form-control" required>
             <option value="" disabled selected>Select location</option>
-            <option value="a">A-Block</option>
-            <option value="b">B-Block</option>
-            <option value="c">C-Block</option>
-            <option value="d">D-Block</option>
-            <option value="e">E-Block</option>
-            <option value="f">F-Block</option>
-            <option value="m">M-Block</option>
-            <option value="s">S-Block</option>
-            <option value="y">Y-Block</option>
-            <option value="vsit">VSIT</option>
-            <option value="vp">VP</option>
+            <option value="A-Block">A-Block</option>
+            <option value="B-Block">B-Block</option>
+            <option value="C-Block">C-Block</option>
+            <option value="D-Block">D-Block</option>
+            <option value="E-Block">E-Block</option>
+            <option value="F-Block">F-Block</option>
+            <option value="M-Block">M-Block</option>
+            <option value="S-Block">S-Block</option>
+            <option value="Y-Block">Y-Block</option>
+            <option value="VSIT">VSIT</option>
+            <option value="VP">VP</option>
+            <option value="CDX">CDX</option>
           </select>
         </div>
 
         <div class="form-group col-md-4">
           <label for="tym">Time when you lost the item (HH:MM)</label>
-          <input name="tym" class="form-control" type="Text" placeholder="Enter time">
+          <input name="tym" class="form-control" type="Text" placeholder="Enter time" required>
         </div>
 
         <div class="form-group col-md-12">
@@ -93,12 +94,9 @@
         </div>
 
         <div class="form-group col-md-12">
-          <label for="img">Upload an Image</label>
+          <label for="image">Upload an Image</label>
           <br>
-          <label class="custom-file">
-            <input name="img" type="file" id="file2" class="custom-file-input">
-            <span class="custom-file-control"></span>
-          </label>
+            <input type="file" class="form-control-file" name="img">
         </div>
 
         <div class="form-group col-lg-12">
@@ -107,8 +105,27 @@
         </div>
 
       </div>
+    </form>
   </div>
 
   <?php include 'footer.php';?>
     </body>
     </html>
+
+    <script type="text/javascript">
+
+    function valtime(timetxt)
+    {
+      var time = /^([0-9]|0[0-9]|1[0-9]|2[0-3]):[0-5][0-9]+$/;
+      if(timetxt.value.match(time))
+       {
+        return true;
+       }
+     else
+       {
+        alert("Please enter the time in HH:MM format.");
+        return false;
+       }
+    }
+
+    </script>
