@@ -25,22 +25,28 @@
             <h2 class="intro-text text-center display-3">Contact Us</h2>
             <hr>
             <p>Have any questions? You can drop us a message by filling out this form, and we will get back to you as soon as possible.</p>
-            <form action="includes/contactus.php" method="POST"><div class="row">
+            <form onsubmit="return valname(name) && validate(phno)" action="includes/contactus.php" method="POST"><div class="row">
               <div class="form-group col-lg-4">
                 <label for="">Name</label>
                 <input type="text" class="form-control" name="name" required>
               </div>
               <div class="form-group col-lg-4">
                 <label for="">E-Mail</label>
-                <input type="email" class="form-control" name="email" required>
+                <div class="input-group">
+                  <span class="input-group-addon" id="basic-addon1">@</span>
+                  <input type="email" class="form-control" name="email" required>
+                </div>
               </div>
               <div class="form-group col-lg-4">
                 <label for="">Phone Number</label>
-                <input type="tel" class="form-control" name="phno" required>
+                <div class="input-group">
+                  <span class="input-group-addon" id="basic-addon1">+91</span>
+                  <input type="tel" class="form-control" name="phno" required>
+                </div>
               </div>
               <div class="form-group col-lg-12">
                 <label for="">Message</label>
-                <textarea class="form-control" rows="10" name="msg"></textarea>
+                <textarea class="form-control" rows="10" name="msg" required></textarea>
               </div>
               <div class="form-group col-lg-12">
                 <input type="hidden" name="savebtn" value="contact">
@@ -55,3 +61,39 @@
 <?php include 'footer.php';?>
 </body>
 </html>
+
+<script type="text/javascript">
+
+function validate(inputtxt)
+{
+  var phoneno = /^\d{10}$/;
+  if(inputtxt.value.match(phoneno))
+  {
+      return true;
+  }
+  else
+  {
+     alert("Phone number must be 10 digits.");
+     return false;
+  }
+}
+
+</script>
+
+<script type="text/javascript">
+
+function valname(nametxt)
+{
+  var letters = /^[a-zA-Z]+$/;
+  if(nametxt.value.match(letters))
+   {
+    return true;
+   }
+ else
+   {
+    alert("Name cannot contain numbers.");
+    return false;
+   }
+}
+
+</script>
