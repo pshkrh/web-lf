@@ -207,6 +207,31 @@
             </div>
         </div>
           </div>
+
+          <!--Thanks Modal -->
+<div id="thanksModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title">Forgot Password</h3>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p>We'll send you a link to change your password at your registered e-mail address.</p>
+        <p>It should arrive within 24 hours.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
       <!-- /container -->
 
       <?php include 'footer.php';?>
