@@ -20,7 +20,7 @@
 <body>
 
 <div class="container">
-  <h1 class="display-1 text-justify">Thanks for logging in, <?php echo("{$_SESSION['username']}");?>.</h1>
+  <h1 class="display-2 text-justify">Thanks for logging in, <?php echo("{$_SESSION['username']}");?>.</h1>
   <h1 class="display-4 text-justify">You'll be redirected in 5 seconds.</h1>
   <a href="lf.php">Click here if your browser does not redirect you.</a>
 </div>
