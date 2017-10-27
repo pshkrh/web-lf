@@ -8,7 +8,7 @@ $result=mysqli_query($conn,$sql);
 if(!$row = mysqli_fetch_assoc($result))
 {
   echo "<script language='javascript' type='text/javascript'>";
-  echo "alert('Incorrect Username or Password.');";
+  echo "alert('This E-Mail is not registered.');";
   echo "</script>";
   $URL="../index.php";
   echo "<script>location.href='$URL'</script>";
