@@ -31,7 +31,7 @@
   </div>
 
   <?php
-  $sql = "SELECT id,type,company,model,location,status,user FROM lost";
+  $sql = "SELECT id,type,company,model,location,status,user,img FROM lost";
   $result=mysqli_query($conn,$sql);
 
   echo"<div class='container'>";
@@ -45,10 +45,12 @@
   <th>Location</th>
   <th>Status</th>
   <th>Reported By</th>
+  <th>Image</th>
   </tr>
   </thead>";
   while($row = mysqli_fetch_array($result))
   {
+    $imagename = $row['img'];
     echo "<tr>";
     echo "<td>" . $row['id'] . "</td>";
     echo "<td>" . $row['type'] . "</td>";
@@ -57,6 +59,9 @@
     echo "<td>" . $row['location'] . "</td>";
     echo "<td>" . $row['status'] . "</td>";
     echo "<td>" . $row['user'] . "</td>";
+    echo "<td>";
+    echo "<button type='button' class='btn btn-info' data-toggle='modal' data-target='#viewImage'>View Image</a>";
+    echo"</td>";
     echo "</tr>";
   }
   echo "</table>";
@@ -71,7 +76,7 @@
   </div>
 
 <?php
-  $sql = "SELECT id,type,company,model,location,status,user FROM found";
+  $sql = "SELECT id,type,company,model,location,status,user,img FROM found";
   $result=mysqli_query($conn,$sql);
 
   echo"<div class='container'>";
@@ -85,6 +90,7 @@
   <th>Location</th>
   <th>Status</th>
   <th>Reported By</th>
+  <th>Image</th>
   </tr>
   </thead>";
 
@@ -98,6 +104,11 @@
     echo "<td>" . $row['location'] . "</td>";
     echo "<td>" . $row['status'] . "</td>";
     echo "<td>" . $row['user'] . "</td>";
+    echo "<td>";
+    echo "<a href='pics/" . $row['img'] . ">";
+    echo "<button type='button' class='btn btn-info'>View Item</button>";
+    echo "</a>";
+    echo"</td>";
     echo "</tr>";
   }
   echo "</table>";
@@ -106,5 +117,27 @@
 mysqli_close($conn);
 
   include 'footer.php';?>
+
+  <!--View Image Modal -->
+<div id="viewImage" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header">
+<h3 class="modal-title">View Image</h3>
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body">
+<!-- Image inserted from PHP -->
+<?php echo "<img src='pics/".$row['img']."'>"; ?>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+</div>
+</div>
+
+</div>
+</div>
     </body>
     </html>
