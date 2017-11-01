@@ -84,7 +84,7 @@
         </div>
 
         <div class="form-group col-md-4">
-          <label for="tym">Time when you lost the item (HH:MM)</label>
+          <label for="tym">Time when you found the item (HH:MM)</label>
           <input name="tym" class="form-control" type="Text" placeholder="Enter time" required>
         </div>
 

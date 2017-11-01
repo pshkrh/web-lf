@@ -48,5 +48,12 @@ else
   echo $msg;
 }
 
-header("Location: ../lf.php");
+echo"
+<script>
+alert('Thank you for reporting this item.');
+</script>";
+$URL="../lf.php";
+echo "<script>location.href='$URL'</script>";
+
+//header("Location: ../lf.php");
 ?>
