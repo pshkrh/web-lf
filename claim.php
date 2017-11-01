@@ -51,6 +51,9 @@
   while($row = mysqli_fetch_array($result))
   {
     $imagename = $row['img'];
+    //if($imagename=" "){
+      //$imagename="none.jpg";
+    //}
     echo "<tr>";
     echo "<td>" . $row['id'] . "</td>";
     echo "<td>" . $row['type'] . "</td>";
@@ -59,9 +62,11 @@
     echo "<td>" . $row['location'] . "</td>";
     echo "<td>" . $row['status'] . "</td>";
     echo "<td>" . $row['user'] . "</td>";
-    echo "<td>";
-    echo "<button type='button' class='btn btn-info' data-toggle='modal' data-target='#viewImage'>View Image</a>";
-    echo"</td>";
+    echo"
+    <td>
+    <img src='pics/$imagename' style='width:70px; height:70px;'>
+    </td>
+    ";
     echo "</tr>";
   }
   echo "</table>";
@@ -96,6 +101,7 @@
 
   while($row = mysqli_fetch_array($result))
   {
+    $imagename = $row['img'];
     echo "<tr>";
     echo "<td>" . $row['id'] . "</td>";
     echo "<td>" . $row['type'] . "</td>";
@@ -104,11 +110,11 @@
     echo "<td>" . $row['location'] . "</td>";
     echo "<td>" . $row['status'] . "</td>";
     echo "<td>" . $row['user'] . "</td>";
-    echo "<td>";
-    echo "<a href='pics/" . $row['img'] . ">";
-    echo "<button type='button' class='btn btn-info'>View Item</button>";
-    echo "</a>";
-    echo"</td>";
+    echo"
+    <td>
+    <img src='pics/$imagename' style='width:70px; height:70px;'>
+    </td>
+    ";
     echo "</tr>";
   }
   echo "</table>";
