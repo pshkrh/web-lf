@@ -16,7 +16,7 @@ session_start();
     <link rel="stylesheet" href="./css/bootstrap.min.css"</link>
 
     <!--Custom CSS--->
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style2.css">
 
   </head>
 

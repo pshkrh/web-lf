@@ -17,7 +17,9 @@
   <body>
 
 <?php include 'allpages.php';?>
-<div class="container"><h1 class="display-1">About Us</h1></div>
+<div class="container">
+  <h1 class="display-1">About Us</h1>
+</div>
     <br>
 <div class="container">
   <div class="row">

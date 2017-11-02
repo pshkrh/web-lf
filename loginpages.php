@@ -36,7 +36,7 @@
             <a class="nav-link" href="found.php">Found Item</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="claim.php">Claims</a>
+            <a class="nav-link" href="claim.php">View Reported Items</a>
           </li>
           <li class="nav-item">
             <a class="btn btn-info" href="exit.php" role="button" name="logout">Log Out</a>

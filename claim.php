@@ -21,7 +21,7 @@
   ?>
 
   <div class="container">
-    <h1 class="display-1">Claims</h1>
+    <h1 class="display-1">Reported Items</h1>
     <h6 class="text-muted display-4">You can view all the lost items that have been reported here.</h6>
     <hr>
   </div>
@@ -123,27 +123,5 @@
 mysqli_close($conn);
 
   include 'footer.php';?>
-
-  <!--View Image Modal -->
-<div id="viewImage" class="modal fade" role="dialog">
-<div class="modal-dialog">
-
-<!-- Modal content-->
-<div class="modal-content">
-<div class="modal-header">
-<h3 class="modal-title">View Image</h3>
-<button type="button" class="close" data-dismiss="modal">&times;</button>
-</div>
-<div class="modal-body">
-<!-- Image inserted from PHP -->
-<?php echo "<img src='pics/".$row['img']."'>"; ?>
-</div>
-<div class="modal-footer">
-<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-</div>
-</div>
-
-</div>
-</div>
     </body>
     </html>
